@@ -5,3 +5,8 @@
     color: grey;
     height: 25px;
 }
+
+.hide {
+    display: none;
+}
+
