@@ -57,8 +57,15 @@ for (var i=0; i<questions[counter].answer.length; i++) {
 
 }
 }
-
+function answerHandler(event) {
+var element = event.target
+console.log(element.textContent)
+if (element.textContent !== questions[counter].correct) {
+console.log("false")
+}
+}
 //On button click check to see if they're right or wrong. If wrong, subtract 10 seconds. 
+answersEl.addEventListener("click", answerHandler)
 //Add 1 to our counter, and then rerun show question
 //repeat this process until the time expires or we've reached the end of the questions // there's code within this script.js that is similar to what needs to be done for these three things
 
